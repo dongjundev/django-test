@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.conf.urls import url, include
 
 urlpatterns = [
-    url(r'^', include('elections.urls')),
+    url(r'^', include('elections.urls')),   #localhost:8000으로 연결될경우에 'elections.urls'에서 처리
     url(r'^anmin/', admin.site.urls),
 ]
